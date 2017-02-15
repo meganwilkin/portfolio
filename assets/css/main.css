@@ -27,6 +27,21 @@ header, footer  {
     background-color: #29a0c7;
 }*/
 
+header {
+    min-height: 500px;
+/*        background: #999;*/
+    background-image: url('../images/bubble.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    width: 1080px;
+    margin: 0px auto;
+    padding: 25px 0;
+}
+
 h3 {
     font-family: 'Shadows Into Light', cursive;
     color: #261919;
@@ -34,26 +49,41 @@ h3 {
     left: 0; 
 }
 
-.links-container {
-     position: relative;
+.logo {
+    float: left;
+    font-size: 1.6em;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.navbar-main {
+     float: right;
      padding: 0.5rem;
-     background-color: #29a0c7;
-     z-index: 1;
+/*     background-color: #29a0c7;*/
+     /*z-index: 1;*/
  }
 
-.links-container .navbar-link {
+.navbar-main .navbar-link {
      display: table-cell;
      position: relative;
      height: 100%;
      padding-left: 1rem;
      padding-right: 1rem;
      vertical-align: middle;
-     color: #261919;
+     color: #fff;
      font-size: 0.9rem;
      letter-spacing: 0.05rem;
      font-weight: 700;
      text-decoration: none;
      cursor: pointer; 
+/*     background: none;*/
+}
+
+.navbar-main .navbar-link:hover {
+    border-bottom: 1px solid #fff;
 }
 
 /* Middle section */
