@@ -19,13 +19,13 @@ body {
     color: white; 
     min-height: 100%; 
     background-color: #aae0f2;
-
 }
     
+/* these are not working
 header, footer  {
    min-height: 7%; 
     background-color: #29a0c7;
-}
+}*/
 
 h3 {
     font-family: 'Shadows Into Light', cursive;
@@ -53,9 +53,10 @@ h3 {
      letter-spacing: 0.05rem;
      font-weight: 700;
      text-decoration: none;
-     cursor: pointer;  
+     cursor: pointer; 
 }
 
+/* Middle section */
 h1 {   
     position: absolute;
      top: 40%;
@@ -72,12 +73,13 @@ h1 {
 
 .strap-line {
     position: relative;
-    min-height: 600px; 
-    background color: blue;
+    min-height: 500px; 
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
+
+/* Bottom Section greyed out so comes up on screen
 
 .information {
      position: relative;
@@ -112,6 +114,8 @@ h1 {
 .container.narrow {
      max-width: 56rem;
  }
+
+*/
 
 /* Medium and small screens (640px) */
  @media (min-width: 640px) {
