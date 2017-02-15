@@ -50,7 +50,7 @@ h3 {
 }
 
 .logo {
-    float: left;
+    float: right;
     font-size: 1.6em;
 }
 
@@ -60,6 +60,7 @@ h3 {
 }
 
 .navbar-main {
+     clear: both;
      float: right;
      padding: 0.5rem;
 /*     background-color: #29a0c7;*/
@@ -86,6 +87,10 @@ h3 {
     border-bottom: 1px solid #fff;
 }
 
+.main {
+    min-height: 400px;
+}
+
 /* Middle section */
 h1 {   
     position: absolute;
@@ -107,6 +112,11 @@ h1 {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+
+footer {
+    background-color: #999;
+    min-height: 100px;
 }
 
 /* Bottom Section greyed out so comes up on screen
