@@ -21,12 +21,6 @@ body {
     min-height: 100%; 
     background-color: #fff;
 }
-    
-/* these are not working
-header, footer  {
-   min-height: 7%; 
-    background-color: #29a0c7;
-}*/
 
 header {
     min-height: 500px;
@@ -60,12 +54,11 @@ h3 {
     color: #FFFFFF;
 }
 
-.navbar-main {
+/*.navbar-main {
      clear: both;
      float: right;
      padding: 0.5rem;
-/*     background-color: #29a0c7;*/
-     /*z-index: 1;*/
+     /*z-index: 1;
  }
 
 .navbar-main .navbar-link {
@@ -74,14 +67,13 @@ h3 {
      height: 100%;
      padding-left: 1rem;
      padding-right: 1rem;
-     vertical-align: middle;
      color: #fff;
      font-size: 0.9rem;
      letter-spacing: 0.05rem;
      font-weight: 700;
      text-decoration: none;
      cursor: pointer; 
-/*     background: none;*/
+     text-align: right;
 }
 
 .navbar-main .navbar-link:hover {
@@ -89,10 +81,10 @@ h3 {
 }
 
 .main {
-    min-height: 400px;
-}
-
-/* Middle section */
+    min-height: 300px;
+    
+}*/
+/* Middle information */
 h1 {   
     position: absolute;
      top: 40%;
@@ -102,45 +94,60 @@ h1 {
      width: 100%;
      text-align: center;
      font-size: 4rem;
-     font-weight: 300;
+     font-weight: 200;
      letter-spacing: 0.3rem;
      text-shadow: 1px 1px 0px rgb(58,23,63); 
+     color: #3c3ca0;
 }
 
 .strap-line {
     position: relative;
-    min-height: 500px; 
+    margin-top: 40px;
+    min-height: 200px; 
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
 
 footer {
-    background-color: #999;
+    clear: both;
+    position: relative;
+    background-color: rgba(60, 60, 160, 0.73);
     min-height: 100px;
 }
 
-.section-image {
-    width: 250px;
-    height: 250px;
-    background-color: #9b87c4;
+.button {
+    position: absolute;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #3c3ca0;
+    border-radius: 8px;
+    border: none;
+}
+
+.info-image {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(155, 135, 196, 0.42);
     border-radius: 50%;
-    border: 1px solid navy;
+    border: 1px solid #3c3ca0;
     margin: 0 auto;
 }
 
-.section {
-    height: 250px;
-    width: 250px;
+.information , container{
+    height: 200px;
+    width: 80%;
 }
 
-.section-title {
-    margin-top: 10px;
+.info-title {
+    margin-top: 20px;
     text-align: center;
+    font-size: 25px;
 }
 
-.section-description {
-    margin-top: 5px;
+.info-description {
+    margin-top: 10px;
     text-align: center;
     
 }
@@ -152,7 +159,7 @@ footer {
      position: relative;
  }
  
- .section {
+ .information {
      position: relative;
      padding: 2rem;
      text-align: center;
@@ -167,11 +174,7 @@ footer {
      -moz-transition-delay: 0.2s;
      transition-delay: 0.2s;
  }
- 
- .section .section-title {
-     font-size: 1.25rem;
-     color: white;
- }
+
 
 .container {
      margin: 0 auto;
