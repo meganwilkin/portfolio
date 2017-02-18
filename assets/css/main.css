@@ -305,6 +305,7 @@ footer {
     }
  }
 
+
 .clearfix::before,
 .clearfix::after {
    content: " ";
