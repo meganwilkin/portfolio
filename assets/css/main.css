@@ -15,26 +15,27 @@ html {
  }
 
 body {
-    border-top: 3px solid navy;
+/*    border-top: 3px solid navy;*/
     font-family: 'Trirong', serif;
-    color: navy; 
+    color: #999; 
     min-height: 100%; 
     background-color: #fff;
 }
 
 header {
-    min-height: 500px;
-/*        background: #999;*/
+    min-height: 700px;
     background-image: url('../images/bubble.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+
+
 .container {
     width: 1080px;
     margin: 0px auto;
-    padding: 25px 0;
+    padding: 8px 0;
 }
 
 h3 {
@@ -45,8 +46,21 @@ h3 {
 }
 
 .logo {
-    float: right;
+    float: left;
     font-size: 1.6em;
+    color: #fff;
+    font-family: 'Satisfy', cursive;
+    vertical-align: middle;
+}
+
+.logo span {
+    font-family: 'Passion One', cursive;
+    font-size: 1.2em;
+}
+
+.top-bar {
+    height: 60px;
+    background-color: #8062b2;
 }
 
 .logo a {
@@ -54,55 +68,33 @@ h3 {
     color: #FFFFFF;
 }
 
-/*.navbar-main {
-     clear: both;
-     float: right;
-     padding: 0.5rem;
-     /*z-index: 1;
- }
-
-.navbar-main .navbar-link {
-     display: table-cell;
-     position: relative;
-     height: 100%;
-     padding-left: 1rem;
-     padding-right: 1rem;
-     color: #fff;
-     font-size: 0.9rem;
-     letter-spacing: 0.05rem;
-     font-weight: 700;
-     text-decoration: none;
-     cursor: pointer; 
-     text-align: right;
+.connect {
+    float: right;
 }
 
-.navbar-main .navbar-link:hover {
-    border-bottom: 1px solid #fff;
+.connect img {
+    width: 36px;
+    height: 36px;
+    margin-top: 6px;
+    margin-left: 10px;
+/*    padding-top: 10px;*/
 }
 
-.main {
-    min-height: 300px;
-    
-}*/
+
 /* Middle information */
 h1 {   
-    position: absolute;
-     top: 40%;
-     -webkit-transform: translateY(-50%);
-     -moz-transform: translateY(-50%);
-     transform: translateY(-50%);
-     width: 100%;
      text-align: center;
      font-size: 4rem;
      font-weight: 200;
-     letter-spacing: 0.3rem;
-     text-shadow: 1px 1px 0px rgb(58,23,63); 
-     color: #3c3ca0;
+     letter-spacing: 0.2rem;
+/*    letter-spacing: -99rem;*/
+/*     text-shadow: 1px 1px 0px rgb(58,23,63); */
+     color: #8062b2;
 }
 
 .strap-line {
     position: relative;
-    margin-top: 40px;
+    margin: 10px 0;
     min-height: 200px; 
     background-repeat: no-repeat;
     background-position: center center;
@@ -127,8 +119,8 @@ footer {
 }
 
 .info-image {
-    width: 150px;
-    height: 150px;
+    width: 225px;
+    height: 225px;
     background-color: rgba(155, 135, 196, 0.42);
     border-radius: 50%;
     border: 1px solid #3c3ca0;
@@ -136,7 +128,7 @@ footer {
 }
 
 .information , container{
-    height: 200px;
+/*    height: 200px;*/
     width: 80%;
 }
 
@@ -149,6 +141,7 @@ footer {
 .info-description {
     margin-top: 10px;
     text-align: center;
+    justify-content: center;
     
 }
 
