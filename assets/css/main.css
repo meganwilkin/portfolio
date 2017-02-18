@@ -33,7 +33,6 @@ header {
 
 
 .container {
-    width: 1080px;
     margin: 0px auto;
     padding: 8px 0;
 }
@@ -166,19 +165,19 @@ footer {
 
 .strap-line-upper.appear {
     opacity: 1;
-    transition-duration: 2s;
+    transition-duration: 1.5s;
 }
 
 .strap-line-lower.appear {
     opacity: 1;
-    transition-delay: 2s;
-    transition-duration: 2s;
+    transition-delay: 1.25s;
+    transition-duration: 1.5s;
 }
 
 .info-image.appear {
     opacity: 1;
-    transition-delay: 4s;
-    transition-duration: 2s;
+    transition-delay: 2.5s;
+    transition-duration: 1.5s;
 }
 
 .info-image.brackets {
@@ -260,17 +259,50 @@ footer {
        padding-right: 1rem;
      }
      
+     .column.third { 
+         width: 100%; 
+         margin-top: 20px;
+         margin-bottom: 60px;
+     }
+     
+     .container {
+        width: 90%;
+     }
+     
+     .info-image {
+         opacity: 1;
+     }
+     
+     h1 {
+         font-size: 3rem;
+     }
+     
+     header {
+         min-height: 400px;
+     }
+ }
+ 
+ /* Large screens (1024px) */
+ @media (min-width: 1024px) {
+    html { font-size: 120%; }
+     .container {
+             width: 1080px;
+     }
+     
      .column.full { width: 100%; }
      .column.two-thirds { width: 66.7%; }
      .column.half { width: 50%; }
      .column.third { width: 33.3%; }
      .column.fourth { width: 25%; }
      .column.flow-opposite { float: right; }  
- }
- 
- /* Large screens (1024px) */
- @media (min-width: 1024px) {
-    html { font-size: 120%; }/* Style information will go here */
+     
+    header {
+         min-height: 700px;
+     }
+     
+    .info-image {
+         opacity: 0;
+    }
  }
 
 .clearfix::before,
