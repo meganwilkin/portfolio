@@ -17,7 +17,7 @@ html {
 body {
 /*    border-top: 3px solid navy;*/
     font-family: 'Trirong', serif;
-    color: #999; 
+    color: rgba(111, 111, 111, 0.9);
     min-height: 100%; 
     background-color: #fff;
 }
@@ -60,7 +60,11 @@ h3 {
 
 .top-bar {
     height: 60px;
+    background-color: rgba(128, 98, 178, 1);
     background-color: #8062b2;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
 }
 
 .logo a {
@@ -72,12 +76,45 @@ h3 {
     float: right;
 }
 
+.connect span {
+    color: #FFFFFF;
+    position: relative;
+    font-family: 'Satisfy', cursive;
+    bottom: 10px;
+}
+
 .connect img {
     width: 36px;
     height: 36px;
     margin-top: 6px;
     margin-left: 10px;
 /*    padding-top: 10px;*/
+}
+
+
+.connect a:hover img {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 
 
@@ -102,33 +139,41 @@ h1 {
 }
 
 footer {
+    margin-top: 60px;
     clear: both;
-    position: relative;
-    background-color: rgba(60, 60, 160, 0.73);
-    min-height: 100px;
-}
-
-.button {
-    position: absolute;
-    justify-content: center;
-    padding: 10px 20px;
-    font-size: 20px;
-    color: #3c3ca0;
-    border-radius: 8px;
-    border: none;
+    background-color: rgba(128, 98, 178, 0.9);
+    min-height: 50px;
+    color: rgba(255,255,255,0.8);
 }
 
 .info-image {
     width: 225px;
     height: 225px;
-    background-color: rgba(155, 135, 196, 0.42);
+    background-color: rgba(111, 111, 111, 0.2);;
     border-radius: 50%;
-    border: 1px solid #3c3ca0;
+    border: 1px solid rgba(111, 111, 111, 0.4);
     margin: 0 auto;
 }
 
+.info-image.brackets {
+    background-image: url(../images/brackets.png);
+    background-size: 700px 250px;
+    background-position: center;
+}
+
+.info-image.portfolio {
+    background-image: url(../images/louisejacksoncakedesign.png);
+    background-size: 375px 225px;
+    background-position: center;
+}
+
+.info-image.yoshi {
+    background-image: url(../images/yoshi.jpg);
+    background-size: 225px 400px;
+    background-position: center;
+}
+
 .information , container{
-/*    height: 200px;*/
     width: 80%;
 }
 
@@ -136,49 +181,48 @@ footer {
     margin-top: 20px;
     text-align: center;
     font-size: 25px;
+    color: #8062b2;
 }
 
 .info-description {
-    margin-top: 10px;
+    margin-top: 5px;
     text-align: center;
     justify-content: center;
     
 }
 
-/* Bottom Section greyed out so comes up on screen
+.info a {
+    text-decoration: none;
+    color: rgba(128, 98, 178, 0.85);
+}
 
+.info.column p {
+    margin: 0;
+}
 
-.information {
-     position: relative;
- }
- 
- .information {
-     position: relative;
-     padding: 2rem;
-     text-align: center;
-     opacity: 0;
-     -webkit-transform: scaleX(0.8) translateY(3rem);
-     -moz-transform: scaleX(0.8) translateY(3rem);
-     transform: scaleX(0.8) translateY(3rem);
-     -webkit-transition: all 0.25s ease-in-out;
-     -moz-transition: all 0.25s ease-in-out;
-     transition: all 0.25s ease-in-out;
-     -webkit-transition-delay: 0.2s;
-     -moz-transition-delay: 0.2s;
-     transition-delay: 0.2s;
- }
+.info.column ol {
+    margin-left: 10%;
+}
 
+.read-more {
+/*    position: relative;*/
+}
 
-.container {
-     margin: 0 auto;
-     max-width: 64rem;
- }
+.read-more-container {
+        margin-top: -25px;
+}
 
-.container.narrow {
-     max-width: 56rem;
- }
+.read-more-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #8062b2;
+    background-image: url('../images/varrrow.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
 
-*/
 
 /* Medium and small screens (640px) */
  @media (min-width: 640px) {
